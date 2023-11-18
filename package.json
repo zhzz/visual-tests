@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_bba6e6e65c6874a"
+    "chromatic": "dotenv chromatic",
+    "chromatic:run": "npm run chromatic --exit-zero-on-changes"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@storybook/react-vite": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
     "chromatic": "^9.1.0",
+    "dotenv-cli": "^7.3.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
